@@ -77,7 +77,6 @@ int main() {
         if (choice == 's' || choice == 'S') {
             playerHand[numPlayerCards] = deck[numPlayerCards + 1];
             playerSum = sumHand(playerHand, ++numPlayerCards);
-
             printf("Nueva carta:\n");
             showCard(playerHand[numPlayerCards - 1]);
             printf("Suma total: %d\n", playerSum);
@@ -93,6 +92,5 @@ int main() {
     } else {
         printf("Te has plantado con %d. Fin del juego.\n", playerSum);
     }
-
     return 0;
 }
